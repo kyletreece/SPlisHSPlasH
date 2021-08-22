@@ -83,7 +83,7 @@ endmacro(ei_add_cxx_compiler_flag)
 check_cxx_compiler_flag("-std=c++11" EIGEN_COMPILER_SUPPORT_CPP11)
 
 if(EIGEN_TEST_CXX11)
-  set(CMAKE_CXX_STANDARD 11)
+  set(CMAKE_CXX_STANDARD 14)
   set(CMAKE_CXX_EXTENSIONS OFF)
   if(EIGEN_COMPILER_SUPPORT_CPP11)
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
